@@ -1,16 +1,10 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --font-base: "Inter", system-ui, sans-serif;
+  --font-accent: "Ms Madi", cursive;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -22,5 +16,63 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-base);
+}
+
+.h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.body {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #4b5563;
+}
+
+.accent {
+  font-family: var(--font-accent);
+  font-size: 2.5rem;
+  color: #f4a6c1;
+}
+
+.experience-background {
+  background-image: url('/exp-wall.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.experience-background::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 0;
+}
+
+.statement-background {
+  background-image: url('/statement-background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.statement-background::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  z-index: 0;
 }

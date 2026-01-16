@@ -1,16 +1,32 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Playfair_Display, Ms_Madi, Geist, Inter } from "next/font/google";
+
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const playfair = Playfair_Display({
   subsets: ["latin"],
+  style: ["italic"],
+  variable: "--font-playfair",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const msMadi = Ms_Madi({
   subsets: ["latin"],
+  weight: "400",
+  variable: "--font-ms-madi",
 });
+
+const geist = Geist({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-ms-geist",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-ms-inter",
+});
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -23,12 +39,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={msMadi.variable}>
+      <head>
+        <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ms+Madi&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet" />
+      </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${playfair.variable} ${msMadi.variable} ${msMadi.variable} ${inter.variable} antialiased`}
       >
         {children}
       </body>
+
     </html>
   );
 }
