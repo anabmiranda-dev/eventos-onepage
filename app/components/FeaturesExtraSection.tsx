@@ -1,3 +1,5 @@
+"use client";
+
 // FeaturesExtraSection.tsx
 export default function FeaturesExtraSection() {
   const features = [

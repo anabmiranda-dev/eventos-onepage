@@ -1,3 +1,5 @@
+"use client";
+
 type SectionProps = {
     children: React.ReactNode;
     bg?: string;

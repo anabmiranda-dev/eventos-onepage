@@ -1,3 +1,5 @@
+"use client";
+
 import Section from "@/app/components/Section";
 import SectionHeader from "@/app/components/SectionHeader";
 import Reveal from "./Reveal";
