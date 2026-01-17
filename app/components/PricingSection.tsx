@@ -30,7 +30,6 @@ export default function PricingSection() {
 
         <div className="grid md:grid-cols-2 gap-12">
 
-          {/* PLAN ESENCIAL */}
           <Reveal>
             <div className="border rounded-2xl p-10 bg-white">
               <h3 className="text-xl font-semibold mb-2">
@@ -62,7 +61,6 @@ export default function PricingSection() {
             </div>
           </Reveal>
 
-          {/* PLAN PREMIUM */}
           <Reveal delay={0.1}>
             <div className="relative border-2 border-rose-300 rounded-2xl p-10 bg-white shadow-xl">
 
@@ -91,15 +89,12 @@ export default function PricingSection() {
                 <li>✔ Cambios incluidos</li>
               </ul>
 
-              <a
-                href={`https://wa.me/5491164540220?text=${messagePremium}`}
-                className="inline-block px-6 py-3 rounded-lg bg-rose-300 text-gray-900 hover:bg-rose-200 transition"
+              <a href={`https://wa.me/5491164540220?text=${messagePremium}`} className="inline-block px-6 py-3 rounded-lg bg-rose-300 text-gray-900 hover:bg-rose-200 transition"
               >
                 Elegir Premium
               </a>
             </div>
           </Reveal>
-
         </div>
       </div>
     </section>

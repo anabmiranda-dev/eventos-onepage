@@ -20,18 +20,7 @@ export default function HeroSection() {
         </Reveal>
 
         <Reveal delay={0.05}>
-          <div
-            className="
-              wedding-card
-              w-full
-              max-w-[900px]
-              aspect-[16/9]
-              rounded-3xl
-              shadow-lg
-              opacity-95
-              mb-16
-            "
-          />
+          <div className=" wedding-card w-full max-w-[900px] aspect-[16/9] rounded-3xl shadow-lg opacity-95 mb-16" />
         </Reveal>
 
         <Reveal>
@@ -51,16 +40,10 @@ export default function HeroSection() {
 
         <Reveal>
           <div className="flex gap-4 flex-wrap justify-center">
-            <a
-              href="#pricing"
-              className="px-8 py-4 rounded-xl bg-rose-300 text-gray-900 hover:bg-rose-200 transition"
-            >
+            <a href="#pricing" className="px-8 py-4 rounded-xl bg-rose-300 text-gray-900 hover:bg-rose-200 transition">
               Ver planes
             </a>
-            <a
-              href="#"
-              className="px-8 py-4 rounded-xl border border-gray-300 hover:border-gray-400 transition"
-            >
+            <a href="#" className="px-8 py-4 rounded-xl border border-gray-300 hover:border-gray-400 transition">
               Ver ejemplos
             </a>
           </div>

@@ -15,8 +15,9 @@ const features = [
 export default function FeaturesSection() {
   return (
     <Section id="experience" bg="bg-rose-50">
+      <Reveal>
       <SectionHeader eyebrow="Qué incluye" title="Todo lo que incluye tu página" subtitle="Una experiencia clara, elegante y pensada para compartir"
-      />
+      /></Reveal>
       <div className="grid md:grid-cols-3 gap-8">
 
         {features.map((f, i) => (
