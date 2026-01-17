@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Ms_Madi, Geist, Inter } from "next/font/google";
+import { Playfair_Display, Ms_Madi, Geist, Inter, Qwitcher_Grypen } from "next/font/google";
 
 import "./globals.css";
 
@@ -27,6 +27,12 @@ const inter = Inter({
   variable: "--font-ms-inter",
 });
 
+const qwitcherGypen = Inter({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-ms-qwitcher-grypen",
+});
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -41,10 +47,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={msMadi.variable}>
       <head>
-        <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ms+Madi&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ms+Madi&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Qwitcher+Grypen:wght@400;700&display=swap" rel="stylesheet" />
       </head>
       <body
-        className={`${playfair.variable} ${msMadi.variable} ${msMadi.variable} ${inter.variable} antialiased`}
+        className={`${playfair.variable} ${msMadi.variable} ${msMadi.variable} ${inter.variable} antialiased ${qwitcherGypen.variable}`}
       >
         {children}
       </body>

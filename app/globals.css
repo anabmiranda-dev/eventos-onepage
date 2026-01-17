@@ -58,8 +58,14 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0, 0, 0, 0.6);
   z-index: 0;
+}
+
+.wedding-card {
+  background-image: url('/wedding-card1.png');
+  background-size: cover;
+  background-position: center;
 }
 
 .statement-background {
@@ -73,6 +79,6 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.7);
+  background: rgba(0, 0, 0, 0.7);
   z-index: 0;
 }

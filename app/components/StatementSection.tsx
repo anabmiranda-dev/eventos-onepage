@@ -12,7 +12,7 @@ export default function StatementSection() {
             Todo en un solo lugar
           </h2>
           <h2 className="text-3xl md:text-3xl font-serif text-white">
-            Todo en un solo lugar
+            Diseñado para compartir
           </h2>
           <h2 className="text-3xl md:text-3xl font-serif text-white">
             Hecho a medida de tu evento

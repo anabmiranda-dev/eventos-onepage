@@ -2,6 +2,14 @@
 
 import Reveal from "./Reveal";
 
+const messageEssential = encodeURIComponent(
+  'Hola Ana! Quiero consultarte por el plan "Esencial"'
+);
+
+const messagePremium = encodeURIComponent(
+  'Hola Ana! Quiero consultarte por el plan "Premium"'
+);
+
 export default function PricingSection() {
   return (
     <section id="pricing" className="py-32 bg-white">
@@ -46,7 +54,7 @@ export default function PricingSection() {
               </ul>
 
               <a
-                href="https://wa.me/5491123602150"
+                href={`https://wa.me/5491164540220?text=${messageEssential}`}
                 className="inline-block px-6 py-3 rounded-lg border border-gray-300 hover:border-gray-400 transition"
               >
                 Consultar plan
@@ -84,7 +92,7 @@ export default function PricingSection() {
               </ul>
 
               <a
-                href="https://wa.me/549XXXXXXXXXX"
+                href={`https://wa.me/5491164540220?text=${messagePremium}`}
                 className="inline-block px-6 py-3 rounded-lg bg-rose-300 text-gray-900 hover:bg-rose-200 transition"
               >
                 Elegir Premium

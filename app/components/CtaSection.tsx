@@ -2,6 +2,10 @@
 
 import Reveal from "./Reveal";
 
+const messageContact = encodeURIComponent(
+  'Hola Ana! Quería consultar por las invitaciones digitales para eventos'
+);
+
 export default function FinalCtaSection() {
     return (
         <section id="contact" className="py-32 bg-[#FAFAF9]">
@@ -18,7 +22,7 @@ export default function FinalCtaSection() {
                     </p>
 
                     <a
-                        href="https://wa.me/549XXXXXXXXXX"
+                        href={`https://wa.me/5491164540220?text=${messageContact}`}
                         className="inline-block px-10 py-4 rounded-lg bg-rose-300 text-gray-900 hover:bg-rose-200 transition"
                     >
                         Contactanos por WhatsApp
