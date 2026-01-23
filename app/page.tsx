@@ -22,8 +22,8 @@ export default function Home() {
       <RsvpSection />
       <StatementSection />
       <PricingSection />
-      <CtaSection/>
       <InvitationGallery items={invitations} />
+      <CtaSection/>
     </main >
   );
 }
