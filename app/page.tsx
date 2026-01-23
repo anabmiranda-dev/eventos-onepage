@@ -8,6 +8,8 @@ import FeaturesSection from "./components/FeatureSection";
 import PricingSection from "./components/PricingSection";
 import CtaSection from "./components/CtaSection";
 import Navbar from "./components/NavBar";
+import InvitationGallery from "./components/InvitationGallery";
+import { invitations } from "./datos/invitations";
 
 export default function Home() {
   return (
@@ -21,6 +23,7 @@ export default function Home() {
       <StatementSection />
       <PricingSection />
       <CtaSection/>
+      <InvitationGallery items={invitations} />
     </main >
   );
 }
