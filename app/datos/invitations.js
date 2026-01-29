@@ -8,9 +8,9 @@ export const invitations = [
   },
   {
     id: 2,
-    title: "Christian y Cecilia (no disponible)",
+    title: "Christian y Cecilia",
     category: "Cumpleaños",
-    image: "/invitacion-2.jpg",
-    link: "#",
+    image: "/invitacion-2.png",
+    link: "https://ejemplo-demo-aniycami.web.app/",
   },
 ];

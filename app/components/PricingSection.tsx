@@ -14,7 +14,6 @@ export default function PricingSection() {
   return (
     <section id="pricing" className="py-32 bg-white">
       <div className="max-w-6xl mx-auto px-6">
-
         <Reveal>
           <div className="text-center max-w-3xl mx-auto mb-20">
             <h2 className="text-3xl md:text-4xl font-serif text-gray-900 mb-6">
@@ -26,11 +25,8 @@ export default function PricingSection() {
               Todos los planes incluyen diseño cuidado, hosting y acompañamiento.
             </p>
           </div>
-        </Reveal>
 
-        <div className="grid md:grid-cols-2 gap-12">
-
-          <Reveal>
+          <div className="grid md:grid-cols-2 gap-12">
             <div className="border rounded-2xl p-10 bg-white">
               <h3 className="text-xl font-semibold mb-2">
                 Esencial
@@ -52,18 +48,12 @@ export default function PricingSection() {
                 <li>✔ Entrega en 48 hs</li>
               </ul>
 
-              <a
-                href={`https://wa.me/5491164540220?text=${messageEssential}`}
-                className="inline-block px-6 py-3 rounded-lg border border-gray-300 hover:border-gray-400 transition"
-              >
+              <a target="_blank" href={`https://wa.me/5491164540220?text=${messageEssential}`} className="inline-block px-6 py-3 rounded-lg border border-gray-300 hover:border-gray-400 transition">
                 Consultar plan
               </a>
             </div>
-          </Reveal>
 
-          <Reveal delay={0.1}>
             <div className="relative border-2 border-rose-300 rounded-2xl p-10 bg-white shadow-xl">
-
               <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-rose-300 text-gray-900 text-xs tracking-widest uppercase px-4 py-1 rounded-full">
                 Más elegido
               </span>
@@ -89,13 +79,13 @@ export default function PricingSection() {
                 <li>✔ Cambios incluidos</li>
               </ul>
 
-              <a href={`https://wa.me/5491164540220?text=${messagePremium}`} className="inline-block px-6 py-3 rounded-lg bg-rose-300 text-gray-900 hover:bg-rose-200 transition"
-              >
+              <a target="_blank" href={`https://wa.me/5491164540220?text=${messagePremium}`} className="inline-block px-6 py-3 rounded-lg bg-rose-300 text-gray-900 hover:bg-rose-200 transition">
                 Elegir Premium
               </a>
             </div>
-          </Reveal>
-        </div>
+
+          </div>
+        </Reveal>
       </div>
     </section>
   );

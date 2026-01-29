@@ -6,11 +6,9 @@ import { Check } from "lucide-react";
 export default function RsvpSection() {
   return (
     <section className="py-28 bg-white">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center px-6">
-
-
-        <div>
-          <Reveal>
+      <Reveal>
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center px-6">
+          <div>
             <h2 className="text-3xl md:text-4xl font-serif mb-6 text-gray-900">
               Confirmación de asistencia sin complicaciones
             </h2>
@@ -19,40 +17,32 @@ export default function RsvpSection() {
               Tus invitados confirman su asistencia en segundos desde cualquier
               dispositivo, y vos recibís toda la información ordenada y lista para usar.
             </p>
-          </Reveal>
 
+            <ul className="space-y-3 text-gray-700 mb-10">
 
-          <ul className="space-y-3 text-gray-700 mb-10">
-            <Reveal delay={0.1}>
               <li className="flex items-center gap-2">
                 <Check className="w-5 h-5 text-rose-400 flex-shrink-0" />
                 Formulario simple y rápido
               </li>
-            </Reveal>
 
-            <Reveal delay={0.2}>
               <li className="flex items-center gap-2">
                 <Check className="w-5 h-5 text-rose-400 flex-shrink-0" />
                 Respuestas en tiempo real
               </li>
-            </Reveal>
-            <Reveal delay={0.3}>
               <li className="flex items-center gap-2">
                 <Check className="w-5 h-5 text-rose-400 flex-shrink-0" />
                 Ideal para listas y organización
               </li>
-            </Reveal>
-          </ul>
 
-          <Reveal delay={0.4}>
+            </ul>
+            
+            {/*
             <button className="px-6 py-3 rounded-lg bg-rose-300 text-gray-900 hover:bg-rose-200 transition">
               Ver cómo funciona
             </button>
-          </Reveal>
-        </div>
+            */}
 
-
-        <Reveal delay={0.5}>
+          </div>
           <div className="relative h-[420px] rounded-2xl overflow-hidden shadow-lg">
             <img
               src="/rsvp-section.jpg"
@@ -60,9 +50,8 @@ export default function RsvpSection() {
               className="w-full h-full object-cover"
             />
           </div>
-        </Reveal>
-
-      </div>
+        </div>
+      </Reveal>
     </section >
   );
 }

@@ -11,7 +11,7 @@ export default function ExperienceSection() {
           <h2 className="text-3xl md:text-4xl font-serif text-white">
             Una experiencia pensada para tus invitados
           </h2>
-  
+
           <p className="text-white leading-relaxed">
             Diseñamos invitaciones digitales que cuidan cada detalle:
             desde la información esencial hasta la forma en que tus invitados
