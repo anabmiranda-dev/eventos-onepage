@@ -34,5 +34,11 @@ export const invitations = [
     image: "/invitacion-3.png",
     link: "https://invitacionesdemo-luyemi.web.app/",
   },
-
+  {
+    id: 5,
+    title: "Lucía y Ramiro",
+    category: "Boda",
+    image: "/invitacion-6.png",
+    link: "https://ramiroylucia-invitaciones.web.app/",
+  },
 ];
